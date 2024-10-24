@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favoicon.ico" type="image/x-icon">
+    <title>Neko ARC - Sistema de Pedágio</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/favoicon.ico" alt="Logo" class="logo-img">
+            Neko ARC
+        </div>
+        <div class="container">
+            <h1>Cálculo Trabalhista</h1>
+            <form id="calculoForm">
+                <label for="valorHora">Valor da Hora:</label>
+                <input type="number" id="valorHora" step="0.01" required>
+    
+                <label for="horasTrabalhadas">Quantidade de Horas Trabalhadas:</label>
+                <input type="number" id="horasTrabalhadas" required>
+    
+                <label for="valeTransporte">Recebe Vale-Transporte? (S/N):</label>
+                <input type="text" id="valeTransporte" maxlength="1" required>
+    
+                <label for="outrasDeducoes">Outras Deduções:</label>
+                <input type="number" id="outrasDeducoes" step="0.01" required>
+    
+                <button type="button" onclick="calculoTrabalhista()">Calcular</button>
+            </form>
+            <div class="result" id="result"></div>
+        <div class="login-image">
+            <img src="\images\fb3b2c2d360dea1faad3a83b97adcb7a.jpg" alt="Login Image">
+        </div>
+    </div>
+
+    <button type="button" onclick="openImage()">Mistério!</button>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
